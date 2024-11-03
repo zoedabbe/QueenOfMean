@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Queen of Mean</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <header>
+        <section class="logo">
+            <img src="queenofmean_logo.png" alt="Logo de Queen of Mean" width="300" height="45">
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li> 
+                <li>Productos</li>
+                <li>Ofertas</li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="reseñas.html">Reseñas</a></li>
+                <li><a href="contacto.html" target="_blank">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <h1>Contacto</h1>
+    <form action="">
+        <div class="grupos">
+            <label for="nombre">Nombre</label>
+            <input type="text">
+            <label for="apellido">Apellido</label>
+            <input type="text">
+        </div>
+
+        <div class="grupos">
+            <label for="email">Correo electrónico</label>
+            <input type="email">
+            
+            <label for="telefono">Teléfono</label>
+            <input type="number">
+        </div>
+
+        <div class="grupos">
+            <label for="provincia">Provincia</label>
+            <select name="" id="">
+                <option value="buenos_aires">Buenos Aires</option>
+                <option value="catamarca">Catamarca</option>
+                <option value="chaco">Chaco</option>
+                <option value="chubut">Chubut</option>
+                <option value="caba">Ciudad Autónoma de Buenos Aires</option>
+                <option value="corrientes">Corrientes</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="entre_rios">Entre Ríos</option>
+                <option value="formosa">Formosa</option>
+                <option value="jujuy">Jujuy</option>
+                <option value="la_pampa">La Pampa</option>
+                <option value="la_rioja">La Rioja</option>
+                <option value="mendoza">Mendoza</option>
+                <option value="misiones">Misiones</option>
+                <option value="neuquen">Neuquén</option>
+                <option value="rio_negro">Rio Negro</option>
+                <option value="salta">Salta</option>
+                <option value="san_juan">San Juan</option>
+                <option value="san_luis">San Luis</option>
+                <option value="santa_cruz">Santa Cruz</option>
+                <option value="santa_fe">Santa Fe</option>
+                <option value="santiago_del_estero">Santiago del Estero</option>
+                <option value="tierra_del_fuego">Tierra del Fuego</option>
+                <option value="tucuman">Tucumán</option>
+            </select>
+            
+            <label for="ciudad">Ciudad</label>
+            <input type="text">
+        </div>
+        
+        <div class="grupos">
+            <label for="direccion">Dirección</label>
+            <input type="text">
+            
+            <label for="cp">Código Postal</label>
+            <input type="number">
+        </div>
+
+        <div class="grupos">
+            <label for="mensaje" id="mensaje">Mensaje</label>
+            <textarea id="mensaje-input"></textarea>
+        </div>
+
+        <br>
+
+        <input type="submit" value="Enviar" id="enviar">
+
+    </form>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+
+* {
+    background-color: #070707;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Afacad Flux", sans-serif;
+    color: #dcdbdb;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*nav*/
+
+nav ul li {
+    font-family: "Amarante", serif;
+    font-size: larger;
+    color: #dcdbdb;
+    display: inline-flex;
+    margin-inline: 34px;
+    margin-top: 25px;
+    background-color: #250000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #570000;
+    border-radius: 20px;
+    padding: 5px;
+    padding-inline: 75px;
+}
+
+nav ul li:hover {
+    background-color: #570000; 
+}
+
+
+nav ul li a {
+    color: #dcdbdb;
+    background-color: #250000;
+    text-decoration: none;
+}
+
+nav ul li:hover a {
+    background-color: #570000; 
+}
+
+h1 {
+    text-align: center;
+    font-family: "Amarante", serif;
+    font-size: 45px;
+    margin-top: 50px;
+    background-color:  #250000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #570000;
+    padding: 15px;
+    padding-inline: 75px;
+}
+
+.novedades{
+    text-align: center;
+}
+
+.titulos ul li {
+    font-family: "Amarante", serif;
+    font-size: larger;
+    color: #dcdbdb;
+    display: inline-flex;
+    margin-inline: 65px;
+    margin-top: 10px;
+    background-color: #161616;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #130000;
+    border-radius: 20px;
+    padding: 5px;
+    padding-inline: 75px;
+}
+
+/*sucursales*/
+
+.sucursal{
+    margin: 20px;
+    padding: 15px;
+}
+
+#sucursales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid #570000;
+}
+
+hr {
+    border-color: #250000;
+}
+
+/*sucursales*/
+
+
+/*contacto*/
+
+form {
+    padding-inline: 20%;
+}
+
+form label {
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 100px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+input[type=number] { 
+    -moz-appearance: textfield; 
+    appearance: textfield;
+} /*elimina los botones de input number*/
+
+form input, select, option, textarea {
+    font-weight: bold;
+    font-size: large;
+    color: #070707;
+    background-color: #dcdbdb;
+}
+
+#mensaje-input {
+    min-height: 90%;
+    min-width: 72%;
+    resize: none;
+}
+
+.grupos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.grupos label {
+    width: 30%;
+}
+.grupos input, .grupos select {
+    width: 35%;
+}
+
+#enviar {
+    display: block;
+    margin: auto;
+    width: 9%;
+    font-size: 25px;
+}
+
+/*contacto*/
