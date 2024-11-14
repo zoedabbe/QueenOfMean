@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Queen of Mean</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="logo/logo.png">
 </head>
 <body>
     <header>
         <section class="logo">
-            <img src="queenofmean_logo.png" alt="Logo de Queen of Mean" width="300" height="45">
+            <img src="logo/queenofmean_logo.png" alt="Logo de Queen of Mean" width="300" height="45">
         </section>
 
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li> 
-                <li>Productos</li>
-                <li>Ofertas</li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
                 <li><a href="sucursales.html">Sucursales</a></li>
-                <li><a href="reseñas.html">Reseñas</a></li>
                 <li><a href="contacto.html" target="_blank">Contacto</a></li>
             </ul>
         </nav>
@@ -31,24 +30,68 @@
         </section>
 
         <section class="novedades">
-            <img src="coleccion_verano.png" alt="Coleccion de Verano" width="1500" height="450">
+            <img src="coleccion_verano/coleccion_verano.png" alt="Coleccion de Verano" width="1500" height="450">
         </section>
         
         <section class="titulos">
         <h1>Productos Destacados</h1>
-        <ul>
-            <li>Vestidos</li>
-            <li>Faldas</li>
-            <li>Corsets</li>
-            <li>Oversize</li>
-            <li>Collares</li>
-        </ul>
+
+        <section class="productosdestacados">
+            <div class="productodestacado">
+                <a href="productos.html#seccion_vestidos">
+                    <img src="productos_destacados/vestidos.png" alt="Vestidos">
+                </a>
+            </div>
+
+            <div class="productodestacado">
+                <a href="productos.html#seccion_corset">
+                    <img src="productos_destacados/corsets.png" alt="Corsets">
+                </a>
+            </div>
+
+            <div class="productodestacado" id="destacadoofertas">
+                <a href="ofertas.html">
+                 <img src="productos_destacados/ofertas.png" alt="Ofertas" height="560">
+                </a>
+            </div>
+
+            <div class="productodestacado">
+                <a href="productos.html#seccion_faldas">
+                    <img src="productos_destacados/faldas.png" alt="Faldas">
+                </a>
+            </div>
+
+            <div class="productodestacado">
+                <a href="productos.html#seccion_collares">
+                 <img src="productos_destacados/collares.png" alt="Collares">
+                </a>
+            </div>
         </section>
 
     </main>
 
     <footer>
+        <div class="footer">
 
+            <div class="red_social">
+                <a href="https://www.facebook.com" target="_blank">
+                 <img src="redes/facebook.png" alt="Logo de Facebook">
+                </a>
+            </div>
+
+            <div class="red_social">
+                <a href="https://www.instagram.com" target="_blank">
+                 <img src="redes/instagram.png" alt="Logo de Instagram">
+                </a>
+            </div>
+
+            <div class="red_social">
+                <a href="https://x.com/home?lang=es" target="_blank">
+                 <img src="redes/twitter.png" alt="Logo de Twitter">
+                </a>
+            </div>
+
+        </div>
     </footer>
 </body>
 </html>

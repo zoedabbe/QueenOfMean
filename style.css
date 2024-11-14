@@ -21,13 +21,21 @@ body {
 
 /*nav*/
 
+nav ul {
+    padding: 0;
+    margin: 0; 
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 nav ul li {
     font-family: "Amarante", serif;
     font-size: larger;
     color: #dcdbdb;
-    display: inline-flex;
-    margin-inline: 34px;
-    margin-top: 25px;
+    display: flex; 
+    margin: 0 50px;
+    margin-top: 35px;
     background-color: #250000;
     border-style: solid;
     border-width: 1px;
@@ -35,6 +43,7 @@ nav ul li {
     border-radius: 20px;
     padding: 5px;
     padding-inline: 75px;
+    justify-content: center;
 }
 
 nav ul li:hover {
@@ -84,6 +93,57 @@ h1 {
     padding: 5px;
     padding-inline: 75px;
 }
+
+/*productos*/
+
+.secciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.tituloproducto {
+    font-size: 40px;
+    background-color: #161616;
+    text-align: center;
+}
+
+.producto {
+    width: 360px;
+    height: auto;    
+    box-sizing: border-box;
+    padding-inline: 10px;
+}
+
+.producto h3 {
+    font-size: x-large;
+    padding: 0;
+    margin-block: 3%;
+}
+
+.producto img {
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+}
+
+.producto p {
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: larger;
+}
+
+.producto button {
+    background-color: #dcdbdb;
+    color: #070707;
+    font-family: "Afacad Flux", sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+/*productos*/
 
 /*sucursales*/
 
@@ -160,3 +220,120 @@ form input, select, option, textarea {
 }
 
 /*contacto*/
+
+/*formularioenviado*/
+
+#formularioenviado {
+    text-align: center;
+}
+
+/*formularioenviado*/
+
+/*productosdestacados*/
+
+.productosdestacados {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px; 
+    align-content: center;
+    justify-content: center;
+}
+
+.productodestacado {
+    text-align: center;
+    margin: auto;
+}
+
+#destacadoofertas {
+    grid-column: 2;
+    grid-row: 1 / span 2;   
+}
+
+/*productosdestacados*/
+
+/*footer*/
+
+
+.footer {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color:  #250000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #570000;
+    padding: 15px;
+    padding-inline: 75px;
+}
+
+.red_social {
+    display: flex;
+    justify-content: center;
+}
+
+.red_social img {
+    width: 40px;
+    height: 40px;
+    background-color: #250000;
+    box-sizing: border-box;
+}
+
+.red_social a {
+    background-color: #250000;
+}
+/*footer*/
+
+/*celulares*/
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .productosdestacados {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/*tablets*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    nav ul li {
+        font-size: medium;
+        margin: 0 20px;
+        padding-inline: 50px;
+    }
+
+    .productosdestacados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 36px;
+        padding: 15px;
+    }
+}
